@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+</head>
+<body>
+    <!-- Main Container -->
+<div id="container">
+    <!-- Navbar container -->
+    <div id="navbar">
+        <div id="logo">
+            <img src="assets/logo.png" alt="logo">
+        </div>
+        <ul>
+            <li class="active">
+                <a href="#">Home</a>
+            </li>
+            <li><a href="#">Tech</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </div>
+    <!-- An aside -->
+    <!-- This is for holding the 3D object -->
+    <div id="aSide">
+        <!-- 3D objsect -->
+        <!-- This inserts the 3D object inside the aside container -->
+        
+ <!-- <model-viewer> HTML element -->
+<model-viewer src="scene.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button"><ya-tr-span data-index="10-0" data-translated="false" data-source-lang="en" data-target-lang="ru" data-value=" View in your space " data-translation=" Просмотр в вашем пространстве " data-ch="0" data-type="trSpan"> View in your space </ya-tr-span></button>
+        <div id="ar-prompt">
+            <img src="ar_hand_prompt.png">
+        </div>
+</model-viewer>  
+
+            <script src="script.js"></script>
+                 <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+       
+  
+    </div>
+
+    <!-- Content container -->
+    <!-- This is for holding some brief description about the 3D object -->
+    <div id="content">
+        <h2>3D VR LIVE</h2>
+        <p>The modern headsets, boost your pleasure to the MAX!</p>
+        <button>Shop</button>
+        
+    </div>
+
+    <!-- Social media icons -->
+    <!-- This is for holding some company's social media icons and related links -->
+    <div id="icons">
+        <div id="iconsLogo">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+    </div>
+</div>
+</body>
+</html>
